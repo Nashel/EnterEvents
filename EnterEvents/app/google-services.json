@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": SECRET,
+    "firebase_url": "https://entereventsproject.firebaseio.com",
+    "project_id": "entereventsproject",
+    "storage_bucket": "entereventsproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": SECRET,
+        "android_client_info": {
+          "package_name": "com.example.entereventsproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": SECRET,
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.entereventsproject",
+            "certificate_hash": SECRET
+          }
+        },
+        {
+          "client_id": SECRET,
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": SECRET
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": SECRET,
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

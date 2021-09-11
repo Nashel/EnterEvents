@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PaypalActivity" >
+    <LinearLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_marginBottom="10dp"
+            android:background="#0B3861">
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:text="Cantidad de Entradas:"
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/precioEntrada"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:text="1"
+                android:textAlignment="center"
+                android:inputType="phone"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:background="@android:color/darker_gray"
+                android:onClick="onBuyPressed">
+
+                <Button
+                    android:id="@+id/buyItBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_margin="0dp"
+                    android:textAlignment="viewStart"
+                    android:onClick="onBuyPressed"
+                    android:background="@drawable/paypal"/>
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:textSize="50dp"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:text="PayPal" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2.5"
+                android:background="@android:color/darker_gray">
+                <Button
+                    android:id="@+id/PayU"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:onClick=""
+                    android:textAlignment="viewStart"
+                    android:background="@drawable/payu"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:textSize="50dp"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:text="PayU" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray">
+                <Button
+                    android:id="@+id/free"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="saltarPago"
+                    android:textAlignment="viewStart"
+                    android:background="@drawable/free"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:textSize="50dp"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:text="Free" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
